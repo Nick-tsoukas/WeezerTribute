@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Michroma', sans-serif;
+  font-size: 1em;
 }
 body, html {
   height: 100%;
@@ -10,12 +10,29 @@ body, html {
 body {
   margin: 0;
 }
+h1,h2,h3,h4,h5,h6,p,li {
+  font-family: 'Michroma', sans-serif;
+}
+i {
+  color: red;
+}
+
+img {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+              0 1px 18px 0 rgba(0, 0, 0, 0.12),
+              0 3px 5px -1px rgba(0, 0, 0, 0.4);
+}
+
+a {
+  color: inherit;
+}
 
 nav {
   display: grid;
   margin-left: 25%;
   margin-right: 25%;
   margin-top:25%;
+  font-size: 2em;
 }
 
 h1 {
@@ -32,6 +49,18 @@ ul {
 
 li {
   list-style: none;
+}
+.red_and_padding {
+  color: red;
+}
+
+.margin_right {
+  margin-right: 2em;
+}
+.social {
+  font-size: 4em;
+  align-self: end;
+  justify-self:left;
 }
 
 .video-background {
@@ -50,17 +79,21 @@ li {
   pointer-events: none;
 }
 
-.grid_container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+.top_right_absolute {
+  position: absolute;
+  top: 0;
+  right: 2em;
 }
 
-/* .black {
-  background-image: url('/images/croped_weezer.jpg');
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-} */
+.grid_container {
+  display: grid;
+  grid-template-columns: .5fr 2fr;
+}
+
+.card_grid {
+  display: grid;
+  height: 100%;
+}
 
 .green {
   background: green;
@@ -83,13 +116,29 @@ li {
 }
 
 .card {
+  background: #0000ff91;
+  color: white;
   display: grid;
   height: 100%;
-  grid-template-columns: 1fr 2fr;
-  height:50vh;
+  grid-template-columns: 1.5fr 2fr;
+  height: auto;
   width: 75%;
   justify-self: center;
   align-self: center;
+  padding: 2em 1em 1em 1em;
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+              0 9px 46px 8px rgba(0, 0, 0, 0.12),
+              0 11px 15px -7px rgba(0, 0, 0, 0.4);
+}
+
+.no_margin_top {
+  margin-top: 0;
+}
+
+.bio_container_padding {
+  padding-left: 1em;
+  padding-right: 1em;
+  overflow: scroll;
 }
 
 .bottom_grid {
@@ -105,9 +154,29 @@ li {
 #bioLine {
   transition: all 1s ease-in;
 }
+
+#myCard {
+  transition: all 1s ease-in;
+}
 @media (min-aspect-ratio: 16/9) {
-  .video-foreground { height: 300%; top: -100%; }
+  .video-foreground {
+    height: 300%; top: -100%;
+  }
 }
 @media (max-aspect-ratio: 16/9) {
-  .video-foreground { width: 300%; left: -100%; }
+  .video-foreground {
+    width: 300%; left: -100%;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .hidden_small_screen{
+            display: none;
+        }
+    }
+
+@media screen and (min-width: 1420px) {
+  .bio_container_padding {
+    padding-left: 4em ;
+    padding-right: 4em;
+  }
 }

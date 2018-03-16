@@ -2,11 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
     <title>Weezer</title>
     <link rel="stylesheet" href="./stylesheets/main.css">
     <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
   </head>
   <body>
+    <h1 class="top_right_absolute"><span class="margin_right"><i class="fas fa-heart red_and_padding"></i></span>HAPPY HOUR</h1>
     <!-- this is the test for the full video background -->
     <div class="video-background">
       <div class="video-foreground">
@@ -33,13 +36,12 @@
       </div>
 
       <section class="card_container">
-        <h1 style="position: absolute; top: 0; right: 2em;">Hello world</h1>
-        <div style="display: grid; height: 100%;">
-          <div style="padding:1em; display: grid; grid-template-columns: 1fr 1fr;height: 50vh; width:75%; background: white; justify-self: center; align-self: center;" class="">
+        <div class="card_grid">
+          <div id="myCard" class="card">
             <div class="black">
-              <img style="height: 70%;width: 100%;" src="/images/band.jpg" alt="">
-              <div>
-
+              <img style="height: 60%;width: 100%;" src="/images/band.jpg" alt="">
+              <div style="display:grid; grid-template-columns:2fr 1fr 1fr;">
+                <section>
                   <h6 style="margin-bottom: 0; margin-top: 1em;">MEMBERS</h6>
                   <ul>
                     <li>River Cuomo</li>
@@ -47,11 +49,28 @@
                     <li>Brain Bell</li>
                     <li>Scott Shriner</li>
                   </ul>
-
+                </section>
+                <section class="social">
+                  <a href="https://www.buzzfeed.com/perpetua/weezer?utm_term=.hcOe3lxzr#.cmKmKWYx1" target="_blank"><i class="fab fa-twitter"></i></a>
+                </section>
+                <section class="social">
+                  <a href="https://www.buzzfeed.com/perpetua/weezer?utm_term=.hcOe3lxzr#.cmKmKWYx1" target="_blank"><i class="fab fa-facebook"></i></a>
+                </section>
             </div>
           </div>
 
-          <div class="">
+          <div class="bio_container_padding">
+            <h6 class="no_margin_top">Bio</h6>
+            <p>
+              As one of the most popular groups to emerge in the post-grunge alternative rock aftermath, Weezer received equal amounts of criticism and praise for their hook-heavy guitar pop.
+              <br></br>
+              Drawing from the heavy power pop of arena rockers like Cheap Trick and the angular guitar leads of the Pixies, Weezer leavened their melodies with doses of '70s metal gleaned from bands like Kiss.
+            </p>
+            <p class="hidden_small_screen">
+              What truly set the band apart, though, was their geekiness.
+              <br></br>
+             None of the members of Weezer, especially leader Rivers Cuomo, were conventional rockers: they were kids who holed up in their garage to play along with their favorite records when they weren't studying or watching TV.
+            </p>
 
           </div>
 
