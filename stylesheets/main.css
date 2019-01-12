@@ -2,25 +2,28 @@
   box-sizing: border-box;
   font-size: 1em;
 }
+
 body, html {
   height: 100%;
-  width:100%;
+  width: 100%;
 }
 
 body {
   margin: 0;
 }
-h1,h2,h3,h4,h5,h6,p,li {
+
+h1, h2, h3, h4, h5, h6, p, li {
   font-family: 'Michroma', sans-serif;
 }
+
 i {
   color: red;
 }
 
 img {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
-              0 1px 18px 0 rgba(0, 0, 0, 0.12),
-              0 3px 5px -1px rgba(0, 0, 0, 0.4);
+    0 1px 18px 0 rgba(0, 0, 0, 0.12),
+    0 3px 5px -1px rgba(0, 0, 0, 0.4);
 }
 
 a {
@@ -31,7 +34,7 @@ nav {
   display: grid;
   margin-left: 25%;
   margin-right: 25%;
-  margin-top:25%;
+  margin-top: 25%;
   font-size: 2em;
 }
 
@@ -50,6 +53,12 @@ ul {
 li {
   list-style: none;
 }
+
+iframe {
+  width: 100vw;
+  height: 100vh;
+}
+
 .red_and_padding {
   color: red;
 }
@@ -57,13 +66,14 @@ li {
 .margin_right {
   margin-right: 2em;
 }
+
 .social {
   font-size: 4em;
   align-self: end;
-  justify-self:left;
+  justify-self: left;
 }
 
-.video-background {
+/* .video-background {
   background: #000;
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
@@ -77,8 +87,7 @@ li {
   width: 100%;
   height: 100%;
   pointer-events: none;
-}
-
+} */
 .top_right_absolute {
   position: absolute;
   top: 0;
@@ -98,13 +107,15 @@ li {
 .green {
   background: green;
 }
+
 .side_bar {
   background: #0000ff91;
   height: 100vh;
+  position: absolute;
+  top: 0;
 }
 
-
-.side_bar > h1 {
+.side_bar>h1 {
   color: white;
   font-size: 2em;
   font-weight: bold;
@@ -127,8 +138,8 @@ li {
   align-self: center;
   padding: 2em 1em 1em 1em;
   box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
-              0 9px 46px 8px rgba(0, 0, 0, 0.12),
-              0 11px 15px -7px rgba(0, 0, 0, 0.4);
+    0 9px 46px 8px rgba(0, 0, 0, 0.12),
+    0 11px 15px -7px rgba(0, 0, 0, 0.4);
 }
 
 .no_margin_top {
@@ -158,25 +169,30 @@ li {
 #myCard {
   transition: all 1s ease-in;
 }
+
 @media (min-aspect-ratio: 16/9) {
   .video-foreground {
-    height: 300%; top: -100%;
+    height: 300%;
+    top: -100%;
   }
 }
+
 @media (max-aspect-ratio: 16/9) {
   .video-foreground {
-    width: 300%; left: -100%;
+    width: 300%;
+    left: -100%;
   }
 }
+
 @media screen and (max-width: 1800px) {
-  .hidden_small_screen{
-            display: none;
-        }
-    }
+  .hidden_small_screen {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 1420px) {
   .bio_container_padding {
-    padding-left: 4em ;
+    padding-left: 4em;
     padding-right: 4em;
   }
 }
